@@ -1,9 +1,18 @@
 import express from "express";
-
-const app = express();
+import { AppDataSource } from "./database/data-source";
 
 const port = process.env.PORT || 3333;
 
-app.use(express.json());
+AppDataSource.initialize()
+  .then(() => {
+    const app = express();
 
-app.listen(port, () => console.log(`Server is running on ${port}`));
+    app.use(express.json());
+
+    app.get("/", (req, res) => {
+      return res.json("tudo certo");
+    });
+
+    return app.listen(port, () => console.log(`Server is running on ${port}`));
+  })
+  .catch((e) => console.log("Erro ->", e));
