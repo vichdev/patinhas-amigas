@@ -6,9 +6,11 @@ const port = process.env.DB_PORT as number | undefined;
 
 export const AppDataSource = new DataSource({
   type: "postgres",
-  host: process.env.DB_HOST,
+  host: "patinhas_database",
   port: port,
-  username: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  name: process.env.DB_NAME,
+  username: "patinhas_database",
+  password: "patinhas_admin",
+  name: "patinhas_database",
+  entities: [`src/entities/*.{ts,js}`],
+  migrations: [`src/database/migrations/*.{ts,js}`],
 });
