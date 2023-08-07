@@ -8,13 +8,16 @@ export default interface IInputProps {
   moneyOptions?: Object;
   size?: number;
   fontSize?: string;
+  required?: boolean;
   colorInput?: string;
   clickIconAfter?: Function;
   bottomValidation?: false;
   errorMessage?: string;
+  placeholder?: string;
   inputFocus?: boolean;
   spanErrorAbsolute?: boolean;
-  modelValue: string | (() => string);
+  modelValue: string;
   name?: string;
   validationRules: string;
+  appendInnerIcon?: string;
 }

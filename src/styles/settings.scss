@@ -8,3 +8,27 @@
 // @use 'vuetify/settings' with (
 //   $color-pack: false
 // );
+
+//Input
+// .v-text-field .v-input__details {
+//   padding-inline-start: 0px !important;
+//   padding-top: 0.25rem !important;
+//   min-height: 1rem !important;
+// }
+
+// .v-text-field input {
+//   margin-top: 0px !important;
+// }
+
+// .v-field__input {
+//   min-height: 1rem !important;
+//   padding-top: 0.5rem !important;
+//   padding-bottom: 0.5rem !important;
+// }
+
+//Label
+.v-label {
+  font-size: 0.75rem !important;
+}
+
+//Button

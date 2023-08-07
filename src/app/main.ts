@@ -16,6 +16,9 @@ import { registerPlugins } from "@/plugins";
 //Tailwind
 import "./main.css";
 
+//Rules
+import "@/resources/rules/validationRules";
+
 const app = createApp(App);
 
 registerPlugins(app);

@@ -39,7 +39,7 @@
 </template>
 <script lang="ts" setup>
 import { ref, watch } from "vue";
-import type IModalProps from "./interface/IModalProps";
+import type IModalProps from "./interfaces/IModalProps";
 
 const isDialogVisible = ref<boolean>(false);
 
