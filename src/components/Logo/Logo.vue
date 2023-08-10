@@ -1,7 +1,9 @@
 <template>
   <div class="tw-flex tw-items-center">
-    <VImg src="@/assets/main-logo.svg" width="100" max-width="100" height="100" />
+    <VImg src="@/assets/main-logo.svg" :width="width" max-width="100" :height="heigth" />
     <h1 class="tw-text-xxl" v-if="withText">Patinhas amigas</h1>
+    <v-icon icon="mdi-user-star" color="white">mdi-user-star</v-icon>
+
   </div>
 </template>
 

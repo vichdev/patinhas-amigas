@@ -1,6 +1,6 @@
 import type { VuetifyOptions } from "vuetify";
 
-export const staticPrimaryColor = "#df0e31";
+export const staticPrimaryColor = "#3f3d56";
 
 const theme: VuetifyOptions["theme"] = {
   defaultTheme: "light",
@@ -57,6 +57,7 @@ const theme: VuetifyOptions["theme"] = {
         "switch-disabled-track-opacity": 0.3,
         "switch-disabled-thumb-opacity": 0.4,
         "switch-checked-disabled-opacity": 0.3,
+        "selection-control-size": 0,
 
         // Shadows
         "shadow-key-umbra-color": "#2F2B3D",

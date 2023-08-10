@@ -19,6 +19,9 @@ import "./main.css";
 //Rules
 import "@/resources/rules/validationRules";
 
+import "material-design-icons-iconfont/dist/material-design-icons.css";
+import "@mdi/font/css/materialdesignicons.css";
+
 const app = createApp(App);
 
 registerPlugins(app);

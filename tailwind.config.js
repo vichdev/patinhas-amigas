@@ -59,7 +59,7 @@ export const theme = {
     "yellow-star": "#ffc107",
     "yellow-light-10": "#F4BF001a",
     "yellow-light": "#F49300",
-    primary: "#df0e31",
+    primary: "#3f3d56",
     secondary: "#FFEFD5",
     "primary-light": "#EEFAFD",
     "primary-light-10": "#54C8E91a",
