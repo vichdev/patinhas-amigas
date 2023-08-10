@@ -1,9 +1,11 @@
 <template>
-  <v-app>
-    <default-view />
-  </v-app>
+  <v-layout class="rounded rounded-md tw-h-full">
+    <Navigation />
+    <View />
+  </v-layout>
 </template>
 
 <script lang="ts" setup>
-import DefaultView from './View.vue'
+import View from "@/layouts/default/View.vue";
+import Navigation from "@/components/navigation/Navigation.vue"
 </script>
