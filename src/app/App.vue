@@ -1,5 +1,5 @@
 <template>
-  <router-view class="tw-w-screen" />
+  <router-view class="tw-w-screen tw-h-screen" />
 </template>
 
 <script lang="ts" setup>

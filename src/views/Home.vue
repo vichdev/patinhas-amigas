@@ -1,7 +1,8 @@
 <template>
-  <VMain class="tw-h-screen tw-flex tw-flex-col tw-bg-secondary">
-    hello world!
-  </VMain>
+  <div>
+    hello world 1
+  </div>
+  <div>teste</div>
 </template>
 
 <script lang="ts" setup>

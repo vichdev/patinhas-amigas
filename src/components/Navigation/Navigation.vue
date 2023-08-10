@@ -1,8 +1,7 @@
 <template>
-  <v-card>
-    <v-layout class="tw-h-full">
-      <v-navigation-drawer v-model="drawer" :rail="rail" permanent @click="rail = false" expand-on-hover location="left"
-        class="tw-flex tw-flex-col tw-justify-between tw-h-full">
+  <v-card class="tw-h-full">
+    <v-layout>
+      <v-navigation-drawer v-model="drawer" :rail="rail" permanent @click="rail = false" class="tw-h-full">
         <v-list-item prepend-avatar="@/assets/main-logo.svg" title="Patinhas amigas" color="red" nav>
           <template v-slot:append>
             <v-btn variant="text" icon="mdi-chevron-left" @click.stop="rail = !rail"></v-btn>
@@ -25,7 +24,6 @@
             <UserCard />
           </div>
         </template>
-
       </v-navigation-drawer>
       <v-main style="height: 250px"></v-main>
     </v-layout>

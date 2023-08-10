@@ -21,10 +21,12 @@ import Logo from '../Logo/Logo.vue';
 <style lang="scss" scoped>
 .appbar-card {
   padding: 1rem;
-  position: absolute;
   top: 1rem;
-  border-radius: 0.5rem;
+  display: block;
+  position: absolute;
   width: 100%;
   max-width: 90%;
+  border-radius: 0.5rem;
+
 }
 </style>
