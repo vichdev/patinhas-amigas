@@ -1,5 +1,5 @@
 <template>
-  <v-layout class="rounded rounded-md tw-flex tw-flex-col">
+  <v-layout class="rounded rounded-md tw-flex tw-flex-col tw-max-h-[100vh]">
     <v-navigation-drawer v-model="drawer" :rail="rail" permanent @click="rail = false" class="tw-h-full" expand-on-hover>
       <v-list-item prepend-avatar="@/assets/main-logo.svg" title="Patinhas amigas" color="red" nav>
         <template v-slot:append>
@@ -26,9 +26,14 @@
     </v-navigation-drawer>
 
 
-    <v-main class="tw-flex tw-items-center tw-justify-center tw-relative" style="min-height: 300px;">
-      <v-app-bar class="tw-m-auto tw-max-w-[80%] tw-self-center " title="Application bar" absolute></v-app-bar>
-      <Home />
+    <v-main class=" tw-flex tw-items-center tw-justify-center tw-overflow-y-scroll tw-max-h-[100vh]"
+      style="min-height: 300px;">
+      <Appbar class="tw-max-w-[70%] tw-absolute"></Appbar>
+      <RouterView v-slot="{ Component }">
+        <Transition name="" mode="out-in">
+          <Component :is="Component" />
+        </Transition>
+      </RouterView>
     </v-main>
 
   </v-layout>
@@ -38,10 +43,10 @@
 
 import { ref } from 'vue';
 import UserCard from "@/components/UserCard/UserCard.vue"
-import Home from '@/views/Home.vue';
 import Appbar from '@/components/Appbar/Appbar.vue';
 
 const drawer = ref<boolean>(true)
 const rail = ref<boolean>(true)
 const isLogged = ref<boolean>(false)
+
 </script>

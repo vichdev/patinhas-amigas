@@ -1,8 +1,10 @@
 <template>
-  <div>
-    hello world 1
+  <div class="tw-w-full tw-h-[120vh] tw-flex tw-flex-col tw-items-center tw-justify-center">
+    <div>
+      hello world 1
+    </div>
+    <div>teste</div>
   </div>
-  <div>teste</div>
 </template>
 
 <script lang="ts" setup>
